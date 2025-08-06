@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
   <img
     class="listing-photo"
     [src]="housingLocation.photo"
-    alt="Exterior photo of {{ housingLocation?.name }}"
+    alt="Exterior photo of {{ housingLocation.name}}"
     crossorigin
     />
     <h2 class="listing-heading">{{ housingLocation.name }}</h2>
@@ -25,5 +25,5 @@ import { RouterModule } from '@angular/router';
   styleUrls: [`./housing-location.css`]
 })
 export class HousingLocation {
- @Input() housingLocation!: HousingLocationInfo;  
+ @Input() housingLocation!: HousingLocationInfo;
 }

@@ -2,19 +2,13 @@ import { Injectable } from '@angular/core';
 import {HousingLocationInfo} from './housinglocation';
 import { HousingLocation } from './housing-location/housing-location';
 
-
-
 @Injectable({
   providedIn: 'root'
 })
 export class Housing {
   readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
-  
+
 protected housingLocationList: HousingLocationInfo[] = [
-
-
-
-
     {
       id: 0,
       name: 'Acme Fresh Start Housing',
